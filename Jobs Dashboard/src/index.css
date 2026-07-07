@@ -1,0 +1,178 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body
+{
+    background-color: #22223b;
+} 
+
+.jobsContainer
+{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.jobCard{
+    background-color: #4a4e69;
+    border-radius: 20px;
+
+    border: 1px solid #4a4e69;
+    box-shadow: 0px 8px 20px #4a4e69;
+    
+    padding: 20px 20px;
+
+     max-width: 350px;
+    width: 100%;
+    transition: all 0.3s ease;
+
+    color: #f2e9e4;
+    line-height: 2;
+}
+
+.jobCard:hover
+{
+    transform: translateY(-3px);
+    border-color: #f2e9e4;
+    box-shadow: 0 15px 35px rgba(0,0,0,.45);
+}
+
+.top
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top img
+{
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    object-fit:contain;
+    background-color: white;
+
+    padding: 5px;
+}
+
+.top button
+{
+    background-color: #9a8c98;
+    color:#f2e9e4;
+    border: none;
+    padding: 7px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.top button:active
+{
+    transform:scale(.98);
+}
+
+.company
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.company h3
+{
+    font-size:1.3rem;
+}
+
+.company p
+{
+    color:#c9c9c9;
+}
+
+hr
+{
+    margin:20px 0;
+    border:none;
+    border-top:1px solid rgba(255,255,255,.15);
+}
+
+.designation
+{
+    text-align: center;
+    margin-top: 10px;
+    color:#9a8c98;
+}
+
+.position
+{
+    display: flex;
+    justify-content: space-evenly;
+    
+    margin-top: 10px;
+    
+}
+
+.position p
+{
+    background-color:#9a8c98 ;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-weight: 600;
+    
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.salary h3
+{
+    color:#4ade80;
+}
+
+.position p:hover
+{
+    transform: translateY(-3px);
+    background-color:#80737e  ;
+}
+
+.info
+{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info button
+{
+    background-color: #9a8c98;
+    color: #f2e9e4;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    
+    cursor: pointer;
+}
+
+.info button:active
+{
+    transform:scale(.98);
+    
+}
+
+.top button,
+.info button
+{
+    transition: background-color .3s ease,
+                transform .2s ease;
+}
+
+.top button:hover,
+.info button:hover
+{
+    background:#80737e;
+}

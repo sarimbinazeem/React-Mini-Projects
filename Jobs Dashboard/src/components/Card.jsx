@@ -2,7 +2,7 @@ import React from 'react'
 
 const Card = ({image,company,offer,designation,duration,level,salary,location}) => {
   return (
-    <div className='productCard'>
+    <div className='jobCard'>
        <div className="top">
             <img src={image} alt={company}></img>
             <button>Save <i className="fa-regular fa-bookmark"></i></button>
