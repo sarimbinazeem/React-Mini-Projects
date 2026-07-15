@@ -4,9 +4,11 @@ import faqData from './data/faqData'
 
 const App = () => {
   return (
-    <div>
-      <FAQ  faqData={faqData}/>
+    <>
+    <div className="min-h-screen w-full flex items-center justify-center bg-[#22223b] p-8">
+      <FAQ  faqData={faqData} />
     </div>
+    </>
   )
 }
 
