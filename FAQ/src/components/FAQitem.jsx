@@ -1,21 +1,24 @@
 import React from 'react'
+import { useState } from 'react'
 
 const FAQitem = ({question,answer}) => {
+
+
+  const [show,setShow] = useState(false)
+
+  const toggle= () =>
+  {
+    setShow(prev => !prev);
+
+  }
+
   return (
     <div>
-      <div>
-          <h2>Frequently Asked Questions</h2>
-          <p>Everything you need to know.</p>        
-      </div>
+
 
       <div>
-        <details>
-          <summary>
-              {question}
-          </summary>
-
-          <p> {answer}</p>
-        </details>
+        <button onClick={toggle}>{show ? "-" : "+"} {question}</button>
+        {show && <p>{answer}</p>}
       </div>
       
     </div>

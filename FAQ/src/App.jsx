@@ -1,11 +1,11 @@
 import React from 'react'
 import FAQ from './components/FAQ'
-import faqdata from './data/faqData'
+import faqData from './data/faqData'
 
 const App = () => {
   return (
     <div>
-      <FAQ  data={faqdata}/>
+      <FAQ  faqData={faqData}/>
     </div>
   )
 }
